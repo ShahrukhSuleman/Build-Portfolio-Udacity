@@ -1,0 +1,182 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font: 12px;
+	color: #222;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 800px;
+	max-width: 100%;
+	height: 150px;
+	background-color: white;
+	border-bottom: 4px dotted #CAA;
+	clear: both;
+}
+
+#logo img {
+	margin: 25px 10px;
+	border-radius: 60%;
+	height: 100px;
+	width: 100px;
+	box-shadow: 5px 5px 15px #AAB;
+}
+
+#portfolioTitle {
+	margin-left: auto;
+	text-align: right;
+	padding: 10px;
+	margin: 10px;
+	color: #663
+}
+
+.center {
+	margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+#symbol-of-lahore {
+	background: no-repeat center/cover url("../img/fort.png");
+	width: 650px;
+	height: 400px;
+	margin-top: 10px;
+	max-width: 100%;
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	text-shadow: 4px 4px 2px #000;
+	vertical-align: middle;
+	line-height: 400px;
+	box-shadow: 4px 4px 4px 0 #eee;
+}
+
+#symbol-of-lahore p{
+	opacity: 0.8;
+}
+
+.featured-work {
+	width: 800px;
+	max-width: 100%;
+	font-size: 1em;
+	text-align: center;
+}
+
+#content {
+	display: flex;
+	width: 800px;
+	max-width: 100%;
+}
+
+.project-card {
+	box-shadow: 2px 2px 4px 0 #eee;
+	width: 29%;
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.project img {
+	overflow: visible;
+	width: 100%;
+}
+
+.project p {
+	font-style: italic;
+	font-size: 12px;
+	width: 100%;
+}
+
+.p-link {
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #953;
+}
+
+footer {
+	width: 800px;
+	max-width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+}
+
+footer img {
+	width: 30px;
+	height: 30px;
+}
+
+/* Break point listed here*/
+
+@media screen and (max-width: 768px) {
+	#content {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.project-card {
+		min-width: 40%;
+		max-width: 50%;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.featured-work {
+		font-size: 1.5em;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	#a-nice-view {
+		height: 150px;
+		font-size: 2em;
+		line-height: 150px;
+	}
+
+	#logo img {
+		height: 50px;
+		width: 50px;
+		box-shadow: 2px 2px 15px #AAB;
+	}
+
+	header {
+		height: 100px;
+		background-color: white;
+		border-bottom: 3px dotted #CAA;
+	}
+
+	#portfolioTitle {
+		margin: 0;
+	}
+
+	.project-card {
+
+		min-width:96%;
+	}
+	
+	.project {
+		width:100%;
+	}
+
+	.featured-work {
+		font-size: 1em;
+		text-align: center;
+	}
+
+}
