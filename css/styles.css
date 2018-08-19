@@ -48,8 +48,8 @@ header {
 
 #symbol-of-lahore {
 	background: no-repeat center/cover url("../img/fort.png");
-	/*width: 650px;*/
-	/*height: 400px;*/
+	width: 650px;
+	height: 400px;
 	/*height: auto;*/
 	margin-top: 10px;
 	max-width: 100%;
